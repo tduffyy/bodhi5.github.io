@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Bodhi5 - Coming soon page</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link href="css/social-buttons.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+    <!-- Color picker -->
+    <link href="colorpicker/css/colorpicker.css" rel="stylesheet" />
+    <script src="colorpicker/js/bootstrap-colorpicker.js"></script>
+    <script type="text/javascript">
+        $(function(){
+        window.prettyPrint && prettyPrint()
+            var logoStyle = $('#logo')[0].style;
+            var headingStyle = $('h1')[0].style;
+            $('#cp').colorpicker().on('changeColor', function(ev){
+                logoStyle.backgroundColor = ev.color.toHex();
+                headingStyle.color = ev.color.toHex();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="gradient">
+            <div class="row">
+                <div id="logo">
+                    Bodhi5
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <div class="content">
+                        <h1>Coming Soon!</h1>
+                        <p>Our website is launching very soon.<br />Leave us your email below, and we’ll notify the minute we open the doors.</p>
+<!--                         <form action="index.html" class="form-horizontal">
+                            <input type="email" name="email" placeholder="Enter your email" class="input-large" />
+                            <input type="submit" value="Notify me!" class="btn btn-large" />
+                        </form> -->
+                        <p>
+                            <a href="http://twitter.com/bodhi_5" class="sb circle twitter mytooltip" title="Twitter">Twitter</a>
+                            <a href="mailto:info@bodhi5.com" class="sb circle star mytooltip" title="email">Email</a>
+                            <a href="https://plus.google.com/b/104775960971056006184/104775960971056006184" class="sb circle gplus mytooltip" title="Google Plus">Google Plus</a>
+                            <!--<a href="http://pinterest.com/" class="sb circle pinterest mytooltip" title="Pinterest">Pinterest</a>
+                            <a href="#" class="sb circle rss mytooltip" title="RSS">RSS</a>-->
+                        </p>
+                        <!--<a href="#" class="btn" id="cp" data-color-format="hex" data-color="rgb(255, 255, 255)">Change color</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- Localized -->

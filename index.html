@@ -1,74 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Bodhi5 - Coming soon page</title>
+  <head>
+    <meta charset="utf-8">
+    <title>Bodhi5</title>
+    <meta id="viewport" name="viewport" content ="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="description" content="">
-    <meta name="keywords" content="" />
+    <meta name="author" content="">
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
-    <link href="css/social-buttons.css" rel="stylesheet" />
-    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/custom.css" rel="stylesheet" />
+    <!-- Bootstrap styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/jpreloader.css">
+    <link rel="stylesheet" href="css/meanmenu.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="js/html5shiv.js"></script>
     <![endif]-->
 
-    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+    <!--[if gte IE 9]>
+    <style type="text/css">
+      .gradient {
+         filter: none;
+      }
+    </style>
+    <![endif]-->
 
-    <!-- Color picker -->
-    <link href="colorpicker/css/colorpicker.css" rel="stylesheet" />
-    <script src="colorpicker/js/bootstrap-colorpicker.js"></script>
-    <script type="text/javascript">
-        $(function(){
-        window.prettyPrint && prettyPrint()
-            var logoStyle = $('#logo')[0].style;
-            var headingStyle = $('h1')[0].style;
-            $('#cp').colorpicker().on('changeColor', function(ev){
-                logoStyle.backgroundColor = ev.color.toHex();
-                headingStyle.color = ev.color.toHex();
-            });
-        });
-    </script>
-</head>
+    <!-- Web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
-<body>
-    <div class="container">
-        <div class="gradient">
-            <div class="row">
-                <div id="logo">
-                    Bodhi5
-                </div>
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="ico/favicon.png">
+  </head>
+
+  <body>
+     <!-- Preloader -->
+    <section id="preloader">
+      <ul class="bokeh">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <header class="animatedHeader transparent">
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div id="logo-wrapper" class="span2">
+              <a href="#home"><img src="img/hexagonSM.png" class="logo on-left" alt="Bodhi5"></a>
             </div>
-            <div class="row">
-                <div class="span12">
-                    <div class="content">
-                        <h1>Coming Soon!</h1>
-                        <p>Our website is launching very soon.<br />Stay tuned for more info.</p>
-<!--                         <form action="index.html" class="form-horizontal">
-                            <input type="email" name="email" placeholder="Enter your email" class="input-large" />
-                            <input type="submit" value="Notify me!" class="btn btn-large" />
-                        </form> -->
-                        <p>
-                            <a href="http://twitter.com/bodhi_5" class="sb circle twitter mytooltip" title="Twitter">Twitter</a>
-                            <a href="mailto:info@bodhi5.com" class="sb circle star mytooltip" title="email">Email</a>
-                            <a href="https://plus.google.com/u/1/114728059574121102811" class="sb circle gplus mytooltip" title="Google Plus">Google Plus</a>
-                            <!--<a href="http://pinterest.com/" class="sb circle pinterest mytooltip" title="Pinterest">Pinterest</a>
-                            <a href="#" class="sb circle rss mytooltip" title="RSS">RSS</a>-->
-                        </p>
-                        <!--<a href="#" class="btn" id="cp" data-color-format="hex" data-color="rgb(255, 255, 255)">Change color</a>-->
-                    </div>
-                </div>
+            <div class="span9">
+              <nav id="nav">
+                <ul class="nav-menu">
+                  <li>
+                    <a class="current" href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about">Services</a>
+                  </li>
+                  <li>
+                    <a href="#featured_1">Featured</a>
+                  </li>
+                  <li>
+                    <a href="#projects">Projects</a>
+                  </li>
+                  <li>
+                    <a href="#testimonials">News</a>
+                  </li>
+                  <li>
+                    <a href="#team">Our Team</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
+          </div>
         </div>
     </div>
-</body>
+    </header>
 
+    <section id="home" class="bck darkest landing text-center color white window">
+      <div class="container">
+        <div class="hero-content">
+          <h1>We build the impossible<span class="one">.</span><span class="two">.</span><span class="three">.</span></h1>
+          <form id="nl-form" class="nl-form">
+              <select>
+                <option value="1" selected>mobile apps</option>
+                <option value="2">custom software</option>
+                <option value="3">custom hardware</option>
+              </select>
+              <div class="nl-submit-wrap scrollTo">
+                <a class="button button-3 icomoon-arrow-down-6 get-started" href="#about">Check us out!</a>
+              </div>
+              <div class="nl-overlay"></div>
+            </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="bck white padding text-center text-shadow">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <h1 class="color highlight">Welcome to Bodhi5</h1>
+            <h2>We help develop your vision into reality, every step of the way.</h2>
+          </div>
+          <div class="span3">
+            <div class="icomoon-effect icomoon-animate">
+              <span class="hi-icon fs1" aria-hidden="true" data-icon=""></span>
+            </div>
+            <h3>Dynamic</h3>
+          </div>
+          <div class="span3">
+            <div class="icomoon-effect icomoon-animate">
+              <span class="hi-icon fs1" aria-hidden="true" data-icon=""></span>
+            </div>
+            <h3>Development</h3>
+          </div>
+          <div class="span3">
+            <div class="icomoon-effect icomoon-animate">
+              <span class="hi-icon fs1" aria-hidden="true" data-icon=""></span>
+            </div>
+            <h3>User Experience</h3>
+          </div>
+          <div class="span3">
+            <div class="icomoon-effect icomoon-animate">
+              <span class="hi-icon fs1" aria-hidden="true" data-icon=""></span>
+            </div>
+            <h3>Mobile</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured_1" class="featured bck padding gradient">
+      <div class="container">
+        <div class="row">
+          <div class="span12 text-center">
+            <div class="fs1 text-center" aria-hidden="true" data-icon=""></div>
+            <h1 class="bold theme uppercase text-center">Featured Project</h1>
+          </div>
+          <div class="span12 text-center">
+            <h2 class="theme uppercase margin-top margin-bottom">project title</h2>
+            <p></p>
+          </div>
+
+          <div class="span12 text-center">
+            <div class="md-slider">
+              <div class="md-device-wrapper">
+                <div class="md-device md-device-1">
+                  <a href="#"><img src="" /></a>
+                  <div class="md-border-element"></div>
+                  <div class="md-base-element"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="bck light padding window">
+      <div class="container">
+        <div class="row text-center">
+          <div id="w" class="span12 main">
+            <h2 class="title bold color white text-shadow margin-bottom">Our Recent Projects</h2>
+            <div id="options">
+              <ul id="filters" class="option-set" data-option-key="filter">
+                <li><a href="#filter" data-option-value="*" class="selected">All</a></li>
+                <li><a href="#filter" data-option-value=".creative">Dynamic</a></li>
+                <li><a href="#filter" data-option-value=".web">Web</a></li>
+                <li><a href="#filter" data-option-value=".mobile">Mobile</a></li>
+                <li><a href="#filter" data-option-value=".ux">UX</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="container" class="row">
+          <div class="span4 element creative web">
+            <div class="item-style viewport">
+              <a class="lightbox" href="img/dribbble/cinnamon_roll_1x.png" target="_blank">
+                <span class="dark-background">Project 1</span>
+                <img src="img/dribbble/cinnamon_roll_1x.png" class="portimg" alt="Portfolio image">
+              </a>
+            </div>
+          </div>
+
+          <div class="span4 element creative ux">
+            <div class="item-style viewport">
+              <a class="lightbox" href="img/dribbble/je_dribbble_057_2x_1x.jpg" target="_blank">
+                <span class="dark-background">Project 2</span>
+                <img src="img/dribbble/je_dribbble_057_2x_1x.jpg" class="portimg" alt="Portfolio image">
+              </a>
+            </div>
+          </div>
+
+          <div class="span4 element mobile web">
+            <div class="item-style viewport">
+              <a class="lightbox" href="img/dribbble/milionaire.jpg" target="_blank">
+                <span class="dark-background">Project 3</span>
+                <img src="img/dribbble/milionaire.jpg" class="portimg" alt="Portfolio image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="padding bck lightest window">
+      <div class="container">
+        <div class="row text-center">
+          <div class="span12">
+            <h2 class="title bold color margin-bottom white text-shadow-thin">News</h2>
+          </div>
+          <div class="span4">
+            <blockquote class="twitter-tweet"><p>Awesome! “axti - <a href="https://twitter.com/search?q=%23titainum&amp;src=hash">#titainum</a> <a href="https://twitter.com/appcelerator">@appcelerator</a> ide/editor. PSD to ui generator. Live ui rendering and more. <a href="http://t.co/Kv31NGFU">http://t.co/Kv31NGFU</a>” //<a href="https://twitter.com/euforic">@euforic</a></p>&mdash; Tim Poulsen (@skypanther) <a href="https://twitter.com/skypanther/statuses/266279174430412800">November 7, 2012</a></blockquote>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="span4">
+            <blockquote class="twitter-tweet"><p>Run <a href="https://twitter.com/search?q=%23NodeJS&amp;src=hash">#NodeJS</a> on <a href="https://twitter.com/search?q=%23titanium&amp;src=hash">#titanium</a> <a href="https://twitter.com/appcelerator">@appcelerator</a> Net (tcp), Streams (Node v0.9.x), Buffers and more all ported&#10;<a href="https://t.co/Rv93QU8SJX">https://t.co/Rv93QU8SJX</a></p>&mdash; Christian Sullivan (@euforic) <a href="https://twitter.com/euforic/statuses/309477269288677376">March 7, 2013</a></blockquote>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="span4">
+            <blockquote class="twitter-tweet"><p>I will be speaking at <a href="https://twitter.com/search?q=%23jsla&amp;src=hash">#jsla</a> about my Project Life Cycle of <a href="https://twitter.com/search?q=%23Titanium&amp;src=hash">#Titanium</a> <a href="https://twitter.com/appcelerator">@appcelerator</a> apps. Let me if you have any requests. js.la</p>&mdash; Christian Sullivan (@euforic) <a href="https://twitter.com/euforic/statuses/215543328496820225">June 20, 2012</a></blockquote>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+
+          <div class="span12">
+            <a href="https://twitter.com/bodhi_5" target="_blank" class="button button-2 large margin-top">Follow us on Twitter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="bck light padding window">
+      <div class="container">
+        <div class="row text-center">
+          <div class="span12">
+            <h2 class="title bold color margin-bottom white text-shadow-thin">Our team</h2>
+          </div>
+          <div class="span12">
+            <ul class="teamslider">
+              <li>
+                <div id="team-member">
+                  <div class="user">
+                    <div class="avatar">
+                      <img src="img/cs.jpg" alt="avatar"/>
+                    </div>
+                    <div class="data">
+                      <span class="name">Christian Sullivan</span> CEO
+                    </div>
+                  </div>
+                  <div class="details">
+                    <blockquote>Node.js, Titanium, iOS, Javascript hacker, Software Engineer by day Jiu Jitsu Fighter by night. Buddhist bum, Husband and Father of two beautiful girls.</blockquote>
+                  </div>
+                  <div class="sm-links">
+                    <a href="#"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href="https://twitter.com/euforic"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href="https://plus.google.com/103062670380156013943/"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href="http://www.linkedin.com/profile/view?id=196259905&locale=en_US&trk=tyah"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div id="team-member">
+                  <div class="user">
+                    <div class="avatar">
+                      <img src="img/dr.jpg" alt="avatar"/>
+                    </div>
+                    <div class="data">
+                      <span class="name">Daniel Rebelo</span>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <blockquote></blockquote>
+                  </div>
+                  <div class="sm-links">
+                    <a href="#"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href="https://twitter.com/drebelox"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href="https://plus.google.com/112437377048668605187/"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href=""><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div id="team-member">
+                  <div class="user">
+                    <div class="avatar">
+                      <img src="" alt=""/>
+                    </div>
+                    <div class="data">
+                      <span class="name"></span>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <blockquote></blockquote>
+                  </div>
+                  <div class="sm-links">
+                    <a href="#"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href="https://twitter.com/"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href="https://plus.google.com/"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href=""><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div id="team-member">
+                  <div class="user">
+                    <div class="avatar">
+                      <img src="" alt=""/>
+                    </div>
+                    <div class="data">
+                      <span class="name"></span>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <blockquote></blockquote>
+                  </div>
+                  <div class="sm-links">
+                    <a href="#"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href="https://twitter.com/"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href="https://plus.google.com/"><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                    <a href=""><span class="sm-icon1" aria-hidden="true" data-icon=""></span></a>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="padding bck window">
+      <div class="container">
+        <div id="map_controls"></div>
+        <div class="contact-overlay text-center text-shadow">
+          <h1 class="bold color margin-top margin-bottom">We're based in Newport Beach, CA</h1>
+          <p>3300 Irvine Ave - Suite 310, Newport Beach, CA 92660</p>
+          <p><a href="skype:" class="color highlight margin-right">Skype us</a><br /><a href="#contact-form" class="modal-form color highlight margin-left">Send us a message</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer-cta" class="bck color bottom padding-mini">
+      <div class="container">
+        <div class="row margin-top margin-bottom">
+          <div class="span4">
+            <a href="#home"><img src="img/hexagon.png" alt="Bodhi5"></a>
+            </div>
+                 <div class="span4">
+            <a href="#"><span class="fs2" aria-hidden="true" data-icon=""></span></a>
+            <a href="https://twitter.com/bodhi_5"><span class="fs2" aria-hidden="true" data-icon=""></span></a>
+            <a href="#"><span class="fs2" aria-hidden="true" data-icon=""></span></a>
+            <a href="#"><span class="fs2" aria-hidden="true" data-icon=""></span></a>
+            <p>
+              <span class="bold">Follow us!</span><br />
+              Stay in the loop with what's happening @ Bodhi5.
+            </p>
+          </div>
+          <div class="span4">
+             </div>
+
+        </div>
+      </div>
+    </section>
+
+    <a href="#" class="scrollup">Scroll</a>
+
+    <footer class="bck dark padding">
+      <div class="container">
+        <div class="row">
+          <div class="span6">
+            Created by <a href="http://www.bodhi5.com" class="color" target="_blank">Bodhi5</a>
+          </div>
+          <div class="span6 text-right">
+            <nav>
+      <!--         <a href="https://www.tumblr.com/" target="_blank">Blog</a>
+              <a href="#newsletter-modal" class="modal-form">Newsletter</a> -->
+              <a href="#privacy-modal" class="modal-form">Privacy</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <form id="contact-form" class="mfp-hide white-popup-block zoom-anim-dialog">
+      <h1>Get in touch</h1>
+      <p>For more information about our services please submit this form and we will get back to you soon! </p>
+      <div><label>Full Name:</label><input type="text" id="fullname" name="fullname" /></div>
+      <div><label>E-Mail:</label><input type="text" name="email" /></div>
+      <!-- Select -->
+      <div>
+        <label>Type of inquiry:</label>
+        <select name="enquiry-type">
+          <option value="General">General</option>
+          <option value="Creative">Creative</option>
+          <option value="Web">Web</option>
+          <option value="Mobile">Mobile</option>
+          <option value="UX">UX</option>
+        </select>
+      </div>
+
+      <!-- Textarea -->
+      <div>
+        <label style="width: 76px;">Comments:</label>
+        <span>
+          <textarea id="comments" name="comments"></textarea>
+        </span>
+        <span style="display: none;"></span>
+      </div>
+
+      <!-- Separator -->
+      <div><hr/></div>
+
+      <!-- Buttons -->
+      <div>
+        <button class="button-2" type="submit">Send</button>
+      </div>
+    </form>
+
+
+    <!-- ADD MAILCHIMP INTEGRATION CODE HERE -->
+    <form id="newsletter-modal" class="mfp-hide white-popup-block zoom-anim-dialog" action="" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <h2>Subscribe to our mailing list</h2>
+      <div class="mc-field-group">
+        <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+      </label>
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+      </div>
+      <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+      </div>  <div class="clear"><input type="" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button button-2"></div>
+    </form>
+
+    <div id="privacy-modal" class="mfp-hide white-popup-block zoom-anim-dialog">
+      <h2>Privacy Policy</h2>
+      <p>This Privacy Policy governs the manner in which Bodhi5 collects, uses, maintains and discloses information collected from users (each, a "User") of the <a href="www.bodhi5.com">www.bodhi5.com</a> website ("Site"). This privacy policy applies to the Site and all products and services offered by Bodhi5.<br><br>
+
+<b>Personal identification information</b><br><br>
+
+We may collect personal identification information from Users in a variety of ways, including, but not limited to, when Users visit our site, subscribe to the newsletter, fill out a form, and in connection with other activities, services, features or resources we make available on our Site. Users may be asked for, as appropriate, name, email address. Users may, however, visit our Site anonymously. We will collect personal identification information from Users only if they voluntarily submit such information to us. Users can always refuse to supply personally identification information, except that it may prevent them from engaging in certain Site related activities.<br><br>
+
+<b>Non-personal identification information</b><br><br>
+
+We may collect non-personal identification information about Users whenever they interact with our Site. Non-personal identification information may include the browser name, the type of computer and technical information about Users means of connection to our Site, such as the operating system and the Internet service providers utilized and other similar information.<br><br>
+
+<b>Web browser cookies</b><br><br>
+
+Our Site may use "cookies" to enhance User experience. User's web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. User may choose to set their web browser to refuse cookies, or to alert you when cookies are being sent. If they do so, note that some parts of the Site may not function properly.<br><br>
+
+<b>How we use collected information</b><br><br>
+
+Bodhi5 may collect and use Users personal information for the following purposes:<br>
+<ul>
+<li><i>- To improve customer service</i><br>
+  Information you provide helps us respond to your customer service requests and support needs more efficiently.</li>
+<li><i>- To send periodic emails</i><br>
+We may use the email address to respond to their inquiries, questions, and/or other requests. If User decides to opt-in to our mailing list, they will receive emails that may include company news, updates, related product or service information, etc. If at any time the User would like to unsubscribe from receiving future emails, they may do so by contacting us via our Site.</li>
+</ul>
+<b>How we protect your information</b><br><br>
+
+We adopt appropriate data collection, storage and processing practices and security measures to protect against unauthorized access, alteration, disclosure or destruction of your personal information, username, password, transaction information and data stored on our Site.<br><br>
+
+<b>Sharing your personal information</b><br><br>
+
+We do not sell, trade, or rent Users personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners, trusted affiliates and advertisers for the purposes outlined above.<br><br>
+
+<b>Third party websites</b><br><br>
+
+Users may find advertising or other content on our Site that link to the sites and services of our partners, suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links that appear on these sites and are not responsible for the practices employed by websites linked to or from our Site. In addition, these sites or services, including their content and links, may be constantly changing. These sites and services may have their own privacy policies and customer service policies. Browsing and interaction on any other website, including websites which have a link to our Site, is subject to that website's own terms and policies.<br><br>
+
+<b>Changes to this privacy policy</b><br><br>
+
+Bodhi5 has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the bottom of this page. We encourage Users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.<br><br>
+
+<b>Your acceptance of these terms</b><br><br>
+
+By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site. Your continued use of the Site following the posting of changes to this policy will be deemed your acceptance of those changes.<br><br>
+
+<b>Contacting us</b><br><br>
+
+If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us at:<br>
+<a href="www.bodhi5.com">Bodhi5</a><br>
+<a href="www.bodhi5.com">www.bodhi5.com</a><br>
+3300 Irvine Ave Suite 310
+Newport Beach, CA 92660<br>
+info@bodhi5.com<br>
+<br>
+This document was last updated on June 20, 2013<br><br></p>
+
+    </div>
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/modernizr.custom.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/jquery.scrollTo.js"></script>
+    <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.gmap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.jpreloader.min.js"></script>
+    <script src="js/nlform.js"></script>
+    <script src="js/morphingdevice.js"></script>
+    <script src="js/jquery.meanmenu.js"></script>
+    <!--[if lte IE 9]><script src="js/respond.js"></script><![endif]-->
+    <script src="js/custom.js"></script>
+  </body>
 </html>
-
-<!-- Localized -->

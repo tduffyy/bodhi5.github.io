@@ -4,9 +4,14 @@ html, body {
 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue" !important;
 }
 
+
 #moto {
   color: #fff;
   font-weight: normal;
+}
+
+#header-container {
+  width: 100%;
 }
 
 body .theme {
@@ -17,6 +22,7 @@ color: #3E424B !important;
   top: 10px !important;
   height: 80px;
   margin: 0 !important;
+  float: left !important;
 }
 
 blockquote {
@@ -240,8 +246,8 @@ button:before,
 
 #preloader .bokeh {
 	font-size: 100px;
-    width: 1em;
-    height: 1em;
+    width: 100px;
+    height: 100px;
     position: relative;
     margin: 100px auto;
     border-radius: 50%;
@@ -260,7 +266,7 @@ button:before,
     left: 50%;
     top: 0;
     margin: 0 0 0 -.1em;
-    background: #00C176;
+    background: #298CC0;
     -webkit-transform-origin: 50% 250%;
     -moz-transform-origin: 50% 250%;
     -ms-transform-origin: 50% 250%;
@@ -287,7 +293,7 @@ button:before,
     top: 50%;
     right: 0;
     margin: -.1em 0 0 0;
-    background: #FF003C;
+    background: #61B25B;
     -webkit-transform-origin: -150% 50%;
     -moz-transform-origin: -150% 50%;
     -ms-transform-origin: -150% 50%;
@@ -314,7 +320,7 @@ button:before,
     left: 50%;
     bottom: 0;
     margin: 0 0 0 -.1em;
-    background: #FABE28;
+    background: #ffffff;
     -webkit-transform-origin: 50% -150%;
     -moz-transform-origin: 50% -150%;
     -ms-transform-origin: 50% -150%;
@@ -341,7 +347,7 @@ button:before,
     top: 50%;
     left 0;
     margin: -.1em 0 0 0;
-    background: #88C100;
+    background: #3CC7B4;
     -webkit-transform-origin: 250% 50%;
     -moz-transform-origin: 250% 50%;
     -ms-transform-origin: 250% 50%;
@@ -508,14 +514,14 @@ section#projects, section#team {
 }
 
 section#testimonials {
-  background: #3cc7b4 url('../img/hex.png');
+  background: #3cc7b4 url('../img/background2.jpg') no-repeat center center fixed;
 	/*background: #3cc7b4 url('../img/office5.jpg') no-repeat center center fixed;*/
 	min-height: 100%;
-/*	-webkit-background-size: cover;
+	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	background-attachment: fixed;*/
+	background-attachment: fixed;
 	-moz-box-shadow: inset 0 7px 5px -5px rgba(0, 0, 0, .50), inset 0 -7px 5px -5px rgba(0, 0, 0, .50);
 	-webkit-box-shadow: inset 0 7px 5px -5px rgba(0, 0, 0, .50), inset 0 -7px 5px -5px rgba(0, 0, 0, .50);
 	box-shadow: inset 0 7px 5px -5px rgba(0, 0, 0, .50), inset 0 -7px 5px -5px rgba(0, 0, 0, .50);
@@ -1158,7 +1164,9 @@ input:focus::-ms-input-placeholder {
 ------------------------ */
 
 .navbar-inner {
-
+  position: relative !important;
+  left: 0;
+  width: 100% !important;
   background-color: transparent;
   background-image: none;
   border: 0;

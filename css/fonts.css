@@ -2259,3 +2259,17 @@ you can use the generic selector below, but it's slower:
 .icomoon-phone-2:before {
 	content: "\e2de";
 }
+
+.icon-github {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-github:before {
+	content: "\e000";
+}

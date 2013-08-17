@@ -8,6 +8,7 @@ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue" !im
 #moto {
   color: #fff;
   font-weight: normal;
+  font-size: 20px;
 }
 
 #header-container {
@@ -34,7 +35,7 @@ blockquote {
 }
 
 body .color.highlight {
-	color: #008CFF !important;
+	color: #1E84B9 !important;
 }
 body a.color.highlight:hover {
 	color: #f19f0f !important;
@@ -51,7 +52,7 @@ a:link {
 a:hover,
 a:hover,
 a:focus {
-	color: #008CFF;
+	color: #f19f0f;
 	text-decoration: none;
 }
 
@@ -1946,7 +1947,7 @@ input:focus::-ms-input-placeholder {
 }
 
 #contact h1 {
-	color: #33E974;
+	color: #fff;
 	text-transform: normal;
 	font-size: 2.5em;
 	margin-top: 0;

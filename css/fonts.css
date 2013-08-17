@@ -23,7 +23,10 @@
 	font-size: 2.5em;
 }
 
-
+#biopic {
+  height: 310px;
+  width: 290px;
+}
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {

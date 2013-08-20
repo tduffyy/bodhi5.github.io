@@ -487,9 +487,8 @@ section#home {
 
 div#home {
   display: block;
-  background: #66686C url('../img/buildings.png') no-repeat center center fixed;
-  /*background: #3cc7b4 url('../img/bg-featured2.jpg') no-repeat center center fixed;*/
-  background-size: 100%;
+/*  background: #66686C url('../img/buildings.png') no-repeat center center fixed;
+*/  /*background: #3cc7b4 url('../img/bg-featured2.jpg') no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -497,6 +496,7 @@ div#home {
   background-attachment: fixed;
   min-height: 100%;
   width: 100%;
+  z-index: 1;
 }
 
 section#about {

@@ -474,7 +474,8 @@ section#home {
 	display: block;
   background: #66686C url('../img/buildings.png') no-repeat center center fixed;
 	/*background: #3cc7b4 url('../img/bg-featured2.jpg') no-repeat center center fixed;*/
-	-webkit-background-size: cover;
+	background-size: 100%;
+  -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;

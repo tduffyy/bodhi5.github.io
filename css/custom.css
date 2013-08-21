@@ -529,7 +529,7 @@ section#projects, section#team {
 }
 
 section#testimonials {
-  background: #3cc7b4 url('../img/background2.jpg') no-repeat center center fixed;
+  background: #3cc7b4 url('../img/background2.png') no-repeat center center fixed;
 	/*background: #3cc7b4 url('../img/office5.jpg') no-repeat center center fixed;*/
 	min-height: 100%;
 	-webkit-background-size: cover;

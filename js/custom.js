@@ -217,8 +217,8 @@ $(function() {
       overviewMapControl: false
     },
     markers: [{
-        latitude: 33.6598,
-        longitude: -117.877713
+        latitude: 33.704253,
+        longitude: -117.852758
       }
     ]
   });

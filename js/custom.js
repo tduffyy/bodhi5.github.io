@@ -204,8 +204,8 @@ $(window).resize(function() {
 
 $(function() {
   $('#map_controls').gMap({
-    latitude: 33.6598,
-    longitude: -117.877713,
+    latitude: 33.704253,
+    longitude: -117.852758,
     maptype: 'ROADMAP', // 'HYBRID', 'SATELLITE', 'ROADMAP' or 'TERRAIN'
     zoom: 15,
     controls: {

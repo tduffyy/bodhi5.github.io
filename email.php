@@ -2,8 +2,7 @@
 $to = "info@bodhi5.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
-    $headers = "From:" . $from . "\r\n";
-    $headers .= "Access-Control-Allow-Origin: *";
+    $headers = "From:" . $from;
     $subject = $_REQUEST['subject'];
 
     $fields = array();

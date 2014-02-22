@@ -134,16 +134,16 @@ $(document).ready(function() {
       return false
     }
     var data_string = $(".form form").serialize();
+
     $.ajax({
       type: "POST",
-      url: $(".form form").attr("action"),
+      url: "email.php",
       data: data_string,
       success: function(message) {
-        if (message === "ok") {
-          $("#success").fadeIn("slow")
-        } else {
-          $("#error").fadeIn("slow")
-        }
+        alert('message');
+      },
+      error: function() {
+        alert('error');
       }
     });
     return false

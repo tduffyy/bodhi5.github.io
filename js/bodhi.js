@@ -104,6 +104,7 @@ $(document).ready(function() {
     }, 800, "easeOutQuint");
     return false
   });
+
   $("#submit").click(function() {
     $("input#name").removeClass("form-error");
     $("textarea#message").removeClass("form-error");

@@ -3,10 +3,10 @@
   // ------------- BEGIN OF CUSTOMIZABLE INFO ------------------
 
   // email of the person receiving the contact form (your email)
-  $to = 'your_email@gmail.com';
+  $to = 'info@bodhi5.com';
 
   // your site url (for info in the email)
-  $site_url = 'http://mysite.com';
+  $site_url = 'http://bodhi5.com';
 
   $form_email_label = "Your email:";
   $form_message_label = "Your message:";

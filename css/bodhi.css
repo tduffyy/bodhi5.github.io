@@ -45,8 +45,8 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	cursor: pointer;
-	height: 15px;
-	margin: 26px 0 12px 0;
+	height: 40px;
+	margin: 10px 0 0 0;
 	width: 90px;
 	-webkit-transition: all 0.5s ease 0s;
 	-moz-transition: all 0.5s ease 0s;
@@ -71,7 +71,7 @@ nav#navigation li {
 
 nav#navigation li a {
     color: #ffffff;
-    font-family: "QuickSand";
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 14px;
     display: block;
     padding: 12px 13px;
@@ -224,7 +224,7 @@ nav#navigation a.active:after {
 
 .home p {
 	color: #acacac;
-	font-family: "QuickSand";
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 40px;
@@ -234,7 +234,7 @@ nav#navigation a.active:after {
 .home span {
 	color: #acacac;
 	cursor: pointer;
-	font-family: "QuickSand";
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	text-decoration: underline;
@@ -345,7 +345,7 @@ div.team img {
 div.team h2 {
 	text-align: center;
 	font-size: 22px;
-	font-family: "QuickSand";
+	font-family: 'Open Sans Condensed', sans-serif;
 	color: #000000;
 	font-weight: 400;
 	margin-top: 0px;
@@ -478,7 +478,7 @@ div.service p {
 
 .quotes .quotes-slider li blockquote {
 	color:#ffffff;
-	font-family:"QuickSand";
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size:30px;
 	line-height:48px;
 }
@@ -497,7 +497,7 @@ div.service p {
 
 .quotes .quotes-slider li h3 {
 	color:#ffffff;
-	font-family:"QuickSand";
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size:14px;
 	font-weight:700;
 	opacity:0.5;
@@ -745,7 +745,7 @@ div.contact-info {
 
 div.contact-info p {
 	color: #ffffff;
-	font-family: "QuickSand";
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 14px;
 	font-weight: 700;
 	letter-spacing: 1px;
@@ -757,7 +757,7 @@ div.contact-info p {
 	border: 2px solid #999999;
 	border-radius: 2px;
 	color: #999999;
-	font-family: "Open Sans";
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 14px;
     height: 50px;
     margin-bottom: 16px;

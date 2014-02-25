@@ -742,7 +742,7 @@ div.contact .form {
 
 div.contact-info {
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.60) !important;
-	padding: 45px 0px !important;
+	padding: 75px 0px !important;
 }
 
 div.contact-info p {
@@ -883,12 +883,10 @@ div.footer .right {
 }
 
 div.footer .right li {
-	background-color: transparent;
-/*	background-image: url("http://demo.dontlikelimits.com/petra/images/social-icons.png");
-*/	background-repeat: no-repeat;
-	border: 2px solid #444444;
+	background-color: #fff;
+  background-repeat: no-repeat;
 	border-radius: 9999px;
-	color: #444444;
+	color: #B3862F;
 	cursor: pointer;
 	display: inline;
 	font-size: 30px;
@@ -897,9 +895,8 @@ div.footer .right li {
 }
 
 div.footer .right li:hover {
-	background: #fff;
-	border: 2px solid #fff;
-	color: #000000;
+	background: #B3862F;
+	color: #fff;
 }
 
 div.footer .right li i {

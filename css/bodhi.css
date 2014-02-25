@@ -331,6 +331,8 @@ section.team {
 }
 
 div.team {
+  width: 300px;
+  display: inline-table;
 }
 
 div.team img {
@@ -1660,4 +1662,11 @@ div.footer .right li i {
  */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
+}
+
+#teamSection {
+  position: relative;
+/*  width: 960px;
+*/  margin: 0 auto;
+  padding: 0;
 }

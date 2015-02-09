@@ -26,21 +26,23 @@
 
 /*Header*/
 header {
-	background-color:transparent;
+	background-color:black;
 	left:0;
 	position:fixed;
 	top:0;
 	width:100%;
 	z-index:1000;
+  opacity:0.7;
 }
 
 .header {
 	position:relative;
 	width:100%;
+  background-color: rgba(17,17,17,0);
 }
 
 .logo {
-	background-image: url("../images/logo.png");
+	background-image: url('../images/logo.png');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -85,7 +87,7 @@ nav#navigation li a:hover {
 
 nav#navigation a:after {
 	border-bottom: 2px solid transparent;
-    content: "";
+    content: '';
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -101,7 +103,7 @@ nav#navigation a.active {
 
 nav#navigation a.active:after {
 	border-bottom: 2px solid #878787;
-    content: "";
+    content: '';
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -113,7 +115,7 @@ nav#navigation a.active:after {
 
 .mobile-navigation {
 	background-color: transparent;
-	background-image: url("../images/mobile-navigation.png");
+	background-image: url('../images/mobile-navigation.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	display:none;
@@ -142,19 +144,27 @@ nav#navigation a.active:after {
 /*Home*/
 .home {
 	background-color:#fafafa;
-	overflow: hidden;
+	overflow: visible;
 	position: relative;
+
 }
 
 .home .overlay {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+
+    background-color:black;
     position: absolute;
     width: 100%;
     z-index: 10;
+    width:100%;
+    height: 936px;
+    opacity: 0.7;
+
+
+    
 }
 
 .home .video {
-	background-image: url("../video/home.jpg");
+	background-image: url('../video/home.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -169,17 +179,19 @@ nav#navigation a.active:after {
 }
 
 .home .image {
-	background-image: url("../images/backgrounds/home.jpg");
+	background-image: url('../images/backgrounds/home.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	left: 0px;
 	padding: 0px;
 	top: 0px;
+	width:100%;
+	height: 936px;
 }
 
 .home .error {
-	background-image: url("../images/backgrounds/error.jpg");
+	background-image: url('../images/backgrounds/error.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -204,6 +216,7 @@ nav#navigation a.active:after {
 	position: absolute;
 	top: 0;
 	left: 0;
+  vertical-align: middle;
 }
 
 .home .text .inner {
@@ -211,6 +224,7 @@ nav#navigation a.active:after {
 	width: 640px;
 	display: table-cell;
 	vertical-align: middle;
+
 }
 
 .home h1 {
@@ -231,20 +245,6 @@ nav#navigation a.active:after {
 	text-transform: uppercase;
 }
 
-.home span {
-	color: #acacac;
-	cursor: pointer;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 16px;
-	font-weight: bold;
-	text-decoration: underline;
-	text-transform: none;
-}
-
-.home span:hover {
-	color: #ffffff;
-}
-
 .home .arrow {
 	bottom: 30px;
 	height: 15px;
@@ -254,7 +254,7 @@ nav#navigation a.active:after {
 }
 
 .home .arrow a {
-	background-image: url("../images/arrow-bottom.png");
+	background-image: url('../images/arrow-bottom.png');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -292,7 +292,7 @@ nav#navigation a.active:after {
     background:rgba(0, 0, 0, 0.75);
 	height: 100%;
 	width:100%;
-	content:"";
+	content:'';
 	position:absolute;
 }
 .flex-direction-nav a {
@@ -309,7 +309,7 @@ nav#navigation a.active:after {
 /*About*/
 div.about p {
 	color:#999;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 36px;
@@ -331,17 +331,18 @@ section.team {
 }
 
 div.team {
-  width: 300px;
+  width: 200px;
   display: inline-table;
+  margin:5px;
 }
 
 div.team img {
 	border: none;
-	border-radius: 2px;
-	height:260px;
+	border-radius: 200px;
+	height:190px;
 	margin-bottom:25px;
 	opacity:1;
-	width:260px;
+	width:190px;
 }
 
 div.team h2 {
@@ -356,7 +357,7 @@ div.team h2 {
 
 div.team h2 span {
 	color: #be953d;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -365,14 +366,14 @@ div.team h2 span {
 
 div.team p {
 	border-top: 1px solid #cccccc;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: 0.2px;
 	line-height: 30px;
 	margin: 0 auto;
 	padding-top: 20px;
-	width: 260px;
+	width: 200px;
 }
 /*Team*/
 
@@ -421,7 +422,7 @@ div.service h3 {
 div.service p {
 	border-top: 1px solid #cccccc;
 	display: table-cell;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 14px;
 	font-weight: 300;
 	letter-spacing: 0.2px;
@@ -432,39 +433,59 @@ div.service p {
 	top: -10px;
 	width: 260px;
 }
+.selected {
+
+  opacity:0.7;
+}
 /*Services*/
 
 
 /*Quotes*/
 .quotes {
-	background: url("../images/backgrounds/quotes.jpg");
+	background: url('../images/backgrounds/quotes.jpg');
 	background-attachment: fixed;
 	background-repeat: repeat-y;
 	background-size: cover;
 	background-color:#fafafa;
+  height: 400px;
+  vertical-align: middle;
+  text-align: center;
+
+}
+.quotes blockquote{
+
+  font-size: 37px;
+  color:#ffffff;
+  margin-bottom: 20px;
+  font-family: 'Open Sans Condensed', 'sans-serif';
+  font-weight: 700px;
 }
 
 .quotes .overlay {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
-}
-
+    height: 400px;
+    vertical-align: middle;
+    text-align: center;
+  }
 .quotes .quotes-icon {
-	background-image: url("../images/quote.png");
+	background-image: url('../images/quote.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
 	height: 22px;
 	width: 27px;
+  vertical-align: middle;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .quotes .quotes-slider {
 	width:800px;
 	margin-top:55px;
 }
-
 .quotes .quotes-slider .quotes-icon {
     bottom:40px;
-	color:#ffffff;
+	  color:#ffffff;
     display:block;
     font-size: 36px;
     margin-right:auto;
@@ -472,22 +493,19 @@ div.service p {
     position:relative;
     width:50px;
 }
-
 .quotes .quotes-slider li {
 	padding-bottom:30px;
 	text-align: center;
 }
-
-.quotes .quotes-slider li blockquote {
+.quotes .quotes-slider blockquote {
 	color:#ffffff;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size:30px;
 	line-height:48px;
 }
-
 .quotes .quotes-slider li blockquote:after {
 	border-bottom:2px solid #ffffff;
-    content:"";
+    content:'';
     display:block;
     position:relative;
     top:10px;
@@ -546,13 +564,28 @@ section.works .contact-button {
 .work .info {
     background: rgba(255, 255, 255, 0.9);
     height: 100%;
-	left: 0;
+	  left: 0;
     position: absolute;
-    text-align: center;
-	top: 0;
-	bottom: 0;
+    top: 0;
+	  bottom: 0;
     width: 100%;
     z-index: 2;
+    opacity: 0;
+    padding:10px;
+}
+.work .info.selected {
+    background: rgba(255, 255, 255, 0.9);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+    opacity: 1;
+}
+.work .inner{
+    margin-top: 8%;
 }
 
 .work .info h3 {
@@ -561,26 +594,17 @@ section.works .contact-button {
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 7px;
+
+   
 }
 
 .work .info p {
 	color: #999999;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-weight: 400;
-    font-size: 14px;
-    letter-spacing: 0.2px;
-}
-
-.work .info p:after {
-	border-bottom: 2px solid #000000;
-    content: "";
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    top: 12px;
-    width: 14px;
-    z-index: 0;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  padding:10px;
 }
 
 section.work-preview {
@@ -634,7 +658,7 @@ section.work-preview {
 
 .work-preview h1 span {
 	color: #bcbcbc;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 14px;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -644,7 +668,7 @@ section.work-preview {
 
 .work-preview p {
 	color: #727272;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 14px;
 	font-weight: 300;
 	letter-spacing: 0.2px;
@@ -692,7 +716,7 @@ section.work-preview {
 }
 
 #work-preview-close {
-	background-image: url("../images/close.png");
+	background-image: url('../images/close.png');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -715,12 +739,13 @@ section.work-preview {
 
 /*Contact*/
 section.contact {
-	background: url("../images/backgrounds/huntington-beach.jpg");
+	background: url('../images/backgrounds/huntington-beach.jpg');
 	background-attachment: fixed;
 	background-repeat: repeat-y;
 	background-size: cover;
 	background-clip: content-box;
 	background-color:#fafafa;
+
 }
 
 section.contact .overlay {
@@ -753,8 +778,18 @@ div.contact-info p {
 	letter-spacing: 1px;
 	line-height: 26px;
 }
+.appStore{
+  width:200px;
+  height:100px;
+  margin:10px auto;
+}
+.appStore img{
+  width:80px;
+  height:30px;
+  margin:2px;
+}
 
-.form input[type="text"], .form input[type="email"], .form input[type="number"], .form textarea {
+.form input[type='text'], .form input[type='email'], .form input[type='number'], .form textarea {
 	background: transparent;
 	border: 2px solid #999999;
 	border-radius: 2px;
@@ -773,19 +808,19 @@ div.contact-info p {
 }
 
 
-.form input[type="text"]:focus, .form input[type="email"]:focus, .form input[type="number"]:focus, .form textarea:focus {
+.form input[type='text']:focus, .form input[type='email']:focus, .form input[type='number']:focus, .form textarea:focus {
 	border: 2px solid #ffffff;
 	color: #ffffff;
 }
 
-.form input[type="text"] {
+.form input[type='text'] {
     height: 50px;
 }
 
-.form input[type="text"]::-webkit-input-placeholder { color: #aaaaaa; }
-.form input[type="text"]::-moz-placeholder { color: #aaaaaa; }
-.form input[type="text"]:-ms-input-placeholder { color: #aaaaaa; }
-.form input[type="text"]:-moz-placeholder { color: #aaaaaa; }
+.form input[type='text']::-webkit-input-placeholder { color: #aaaaaa; }
+.form input[type='text']::-moz-placeholder { color: #aaaaaa; }
+.form input[type='text']:-ms-input-placeholder { color: #aaaaaa; }
+.form input[type='text']:-moz-placeholder { color: #aaaaaa; }
 
 .form textarea {
     height: 170px;
@@ -834,7 +869,7 @@ div.footer .arrow {
 }
 
 div.footer .arrow a {
-	background-image: url("../images/arrow-top.png");
+	background-image: url('../images/arrow-top.png');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -861,7 +896,7 @@ div.footer .arrow a:hover {
 }
 
 div.footer .footer-logo {
-	background-image: url("../images/logo.png");
+	background-image: url('../images/logo.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
@@ -872,7 +907,7 @@ div.footer .footer-logo {
 
 div.footer .footer-slogan {
 	color:#6c6c6c;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 12px;
 	font-weight: 400;
 	position:relative;
@@ -920,7 +955,7 @@ div.footer .right li i {
 
 #loaderInner {
     background-color:transparent;
-    background-image: url("../images/loader.gif");
+    background-image: url('../images/loader.gif');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -989,8 +1024,9 @@ div.footer .right li i {
 		background-size: cover;
 	}
 	/*Quotes*/
-
+ 
 	/*Header*/
+
 	nav#navigation {
 		margin-right: 0px;
 	}
@@ -1049,6 +1085,8 @@ div.footer .right li i {
 	input, textarea {
 		-webkit-appearance: none;
 	}
+
+/* Title Page */
 
 
 	/*Works*/
@@ -1183,6 +1221,7 @@ div.footer .right li i {
 
 	.container .team {
 		margin-bottom:60px;
+
 	}
 
 
@@ -1226,7 +1265,7 @@ div.footer .right li i {
 		width:420px;
 	}
 
-	div.form input[type="text"]{
+	div.form input[type='text']{
 		width:420px;
 	}
 
@@ -1409,7 +1448,7 @@ div.footer .right li i {
 		width:250px;
 	}
 
-	div.form textarea, div.form form, div.form input[type="text"] {
+	div.form textarea, div.form form, div.form input[type='text'] {
 		padding: 10px 0px;
 		width:250px;
 	}
@@ -1528,7 +1567,7 @@ div.footer .right li i {
 
 #lightbox h1 {
 	color:#fff;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 26px;
 	font-weight: 100;
 	line-height: 26px;
@@ -1537,7 +1576,7 @@ div.footer .right li i {
 
 #lightbox .lbsubtitle {
 	color:#fff;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 10px;
@@ -1546,7 +1585,7 @@ div.footer .right li i {
 
 #lightbox .lbsubtitle:after {
 	border-bottom: 2px solid #fff;
-    content: "";
+    content: '';
     display: block;
     position: relative;
     top: 20px;
@@ -1556,7 +1595,7 @@ div.footer .right li i {
 
 #lightbox .lbtext {
 	color:#999;
-	font-family: "Open Sans";
+	font-family: 'Open Sans';
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 26px;
